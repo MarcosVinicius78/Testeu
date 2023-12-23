@@ -42,8 +42,7 @@ document.getElementById('metaUrl').setAttribute('content', urlAtual);
         shareButton.addEventListener('click', () => {
             navigator.share({
                 title: this.titulo,
-                text: mensagem,
-                url: window.location.href
+                text: mensagem
             })
                 .then(() => console.log('Compartilhado com sucesso'))
                 .catch((error) => console.error('Erro ao compartilhar:', error));
